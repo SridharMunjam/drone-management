@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Drone Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .center-text {
+            text-align: center;
+            margin-bottom: 24px;
+        }        .center-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 class="center-text">Drone Details</h1>
+        <form action="/" method="POST">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="flightRadius">Flight Radius (in meters)</label>
+                        <input type="text" class="form-control" id="flightRadius" name="flightRadius"
+                            placeholder="Enter flight radius">
+                    </div>
+                </div>
+                
+            <div class="center-button">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+        <div class="card">
+            <div class="card-body">
+                Desired Drone Details:
+                <ol>
+                    <li>Drone name = {{a1.drone_name}}</li>
+                    <li>Flight Radius (in meters) = {{a1.flight_radius}}</li>
+                    <li>Flight Altitude (in meters) = {{a1.flight_altitude}}</li>
+                    <li>Operations per Head = {{a1.operations_per_head}}</li>
+                    <li>Flight Time (in minutes) = {{a1.flight_time}}</li>
+                    <li>Payload Capacity (in kg)= {{a1.payload_capacity}}</li>
+                    <li>Flight Range (in km) = {{a1.flight_range}}</li>
+                    <li>Camera Quality (in megapixels)= {{a1.camera_quality}}</li>
+                    <li>Wind Resistance (in kmph) = {{a1.wind_resistance}}</li>
+                    <li>Noise level (in dB)= {{a1.noise_level}}</li>
+                    <li>Cost (in $) = {{a1.cost}}</li>
+                    <li>Data Storage (in GB) = {{a1.data_storage}}</li>
+                    <li>Durability = {{a1.durability}}</li>
+                    <li>Weather Resistance = {{a1.weather_resistance}}</li>
+                    <li>Speed (in kmph) = {{a1.speed}}</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
